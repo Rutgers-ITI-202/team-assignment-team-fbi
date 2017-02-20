@@ -1,7 +1,8 @@
 /*
 This class:
-•	Contains the main method used to start the game.
-•	Talks to the AdventureModel and to the Adventurer classes, as needed.
+â€¢	Contains the main method used to start the game.
+â€¢	Talks to the AdventureModel and to the Adventurer classes, as needed.
+We will make an adventure game based around FBI.
 */
 
 package adventure;
