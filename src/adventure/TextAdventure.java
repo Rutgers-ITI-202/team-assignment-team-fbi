@@ -51,7 +51,7 @@ public class TextAdventure {
 
 		//Right now creating a sample room, will update later.
 		Room r1 = new Room(0, "Main Lobby");
-		r1.addItemtoStuff("Journel");
+		r1.addItemtoStuff("Journal");
 		r1.addItemtoStuff("Magazine");
 
 		//Creating a new player
@@ -71,13 +71,13 @@ public class TextAdventure {
 			currentInput = in.nextLine();	
 		}
 
-		System.out.println("Cool, now follow the instructions for further information");
+		System.out.println("Great to hear, now follow the instructions for further information");
 		System.out.println("**********************************************************");
 
 		code = true;
 
 		while(code) {
-			System.out.println("Press 1 to look at items in room");
+			System.out.println("Press 1 to look at items in the room");
 			System.out.println("Press 2 to look at items in your Bag");
 			currentInput = readInput();
 			
