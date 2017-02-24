@@ -1,17 +1,17 @@
 import java.util.*;
 public class Player {
 	
-	private int room; // Basically since room is just 1, so this will be current room of player
+	private int room; // There's only 1 room right now, so this is the current location for the player.
 	private ArrayList<String> items; //Player's stack
 	private String name;
 
 	public Player() {
-		this.room = -1; // Indicating that he is room at zero index.	
+		this.room = -1; // Indicating that he is in the room 0 in the index.	
 		this.items = new ArrayList<String>(0);
 		this.name = "Rocky";
 	}
 
-	//Since the room variable is private, we need the get method
+	//Since the room variable is private, we need the get method.
 	public int getRoom(){ 
 		return this.room;
 	}
@@ -28,17 +28,17 @@ public class Player {
 		return this.name;
 	}
 
-	//This is to update the room in which the Player is.
+	//This is to update the current room of the Player.
 	public void moveNext(){
 		this.room +=1;
 	}
 
-	//This is to update the room in which the Player is.
+	//This is to update the current room of the Player.
 	public void moveBack(){
 		this.room -=1;
 	}
 
-	//this will print out the lists of Item in Player's Sack
+	//this will print out the lists of Item in the Player's Stash(inventory)
 	public void getItems(){
 		if(this.items.isEmpty()) {
 			System.out.println("You do not have any item");
